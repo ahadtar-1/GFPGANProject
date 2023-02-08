@@ -39,19 +39,11 @@ def upsample_img()-> str:
 def enhance_img()-> str:
     """
     The api function that generates an enhanced image from a noisy image
-<<<<<<< HEAD:application/apis.py
     
     Parameters
     ----------
     None
     
-=======
-
-    Parameters
-    ----------
-    None
-
->>>>>>> a4e1e290fdce8594b38be139c49550e8beee2395:apis.py
     Returns
     -------
     str
@@ -67,7 +59,4 @@ def enhance_img()-> str:
             return send_file(path)
         else:
             return "No image"
-<<<<<<< HEAD:application/apis.py
             
-=======
->>>>>>> a4e1e290fdce8594b38be139c49550e8beee2395:apis.py

@@ -47,3 +47,45 @@ pip install -r requirements.txt
 ```bash
 python3 app.py
 ```
+
+# APIs
+
+### Upsampling Image
+
+A post request would be sent to the flask server. It would comprise of an image file. The response sent back from the server would be an upsampled image file of the sent image.
+
+#### API Endpoint
+
+```
+0.0.0.0:5000/upsampleimg 
+```
+
+#### Payload
+```
+{
+    "file" : testimg.jpg
+
+    key must be the string "file"
+    value must be the file
+}
+```
+
+### Enhance Image
+
+A post request would be sent to the flask server. It would comprise of an image file. The response sent back from the server would be an enhanced image file of the sent image.
+
+#### API Endpoint
+
+```
+0.0.0.0:5000/enhanceimg 
+```
+
+#### Payload
+```
+{
+    "file" : testimg.jpg
+
+    key must be the string "file"
+    value must be the file
+}
+```

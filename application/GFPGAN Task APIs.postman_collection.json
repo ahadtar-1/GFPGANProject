@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "b1bde6bd-ebb5-42fb-a748-2bf662f3b902",
+		"name": "GFPGAN Task APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25619171"
+	},
+	"item": [
+		{
+			"name": "Create Upsampled Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ekkelai/Documents/Tasks/GFPGANTask/noisyimage.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/upsampleimg",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"upsampleimg"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

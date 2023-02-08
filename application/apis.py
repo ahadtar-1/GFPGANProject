@@ -2,11 +2,29 @@
 The module comprises of the different APIs
 """
 
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, render_template
 import os
 from operations import upsampling_image, face_enhancement
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
+
+
+@app.route("/")
+def selection_menu()-> None:
+    """
+    The api functions that display the selection menu
+
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None
+
+    """
+
+    return render_template("page.html")
 
 
 @app.route('/upsampleimg', methods = ['GET', 'POST'])

@@ -14,6 +14,8 @@ git clone https://github.com/ahadtar-1/GFPGANTask.git
 cd GFPGANProject
 
 docker pull ahadtar1/flaskapp:latest
+
+docker run -it ahadtar1/flaskapp:latest
 ```
 
 ### Case 2 - Build Docker Image and Run Project
@@ -25,7 +27,7 @@ docker build -t ahadtar1/flaskapp:latest .
 ```
 
 ```bash
-docker run -it ahadtar1flaskapp
+docker run -it ahadtar1/flaskapp:latest
 ```
 
 ### Case 3 - Run Project without Docker

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APIs</title>
+    </head>
+    <body>  
+        <h1>APIs</h1>
+        <h3>Select an image to be upsampled</h3>
+
+        <form action = "/upsampleimg", method = "post">
+            <input type="file" id="myfile" name="myfile">
+        <br><br>
+            <input type="Submit" name="submitform" value="Submit">
+        </form>
+
+        <h3>Select an image to be enhanced</h3>
+
+        <form action = "/enhanceimg", method = "post">
+            <input type="file" id="myfile" method="post">
+        <br><br>
+            <input type="Submit" name="submitform" value="Submit">
+        </form>
+    </body>
+</html>

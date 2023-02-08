@@ -44,17 +44,6 @@ def upsampling_image(filePath: str)-> str:
 def face_enhancement(filePath: str)-> str:
     """
     The function upsamples an image and enhances the face in the image
-<<<<<<< HEAD:application/operations.py
-    
-    Parameters
-    ----------
-    str
-    
-    Returns
-    -------
-    str
-    
-=======
 
     Parameters
     ----------
@@ -64,7 +53,6 @@ def face_enhancement(filePath: str)-> str:
     -------
     str
 
->>>>>>> a4e1e290fdce8594b38be139c49550e8beee2395:operations.py
     """
 
     newImage = cv2.imread(filePath)
@@ -77,7 +65,3 @@ def face_enhancement(filePath: str)-> str:
     cv2.imwrite(fileName, outputImage)
     path = os.path.join("", fileName)
     return path
-<<<<<<< HEAD:application/operations.py
-    
-=======
->>>>>>> a4e1e290fdce8594b38be139c49550e8beee2395:operations.py

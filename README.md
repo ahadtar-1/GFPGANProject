@@ -16,20 +16,16 @@ cd GFPGANProject
 docker pull ahadtar1/flaskapp:latest
 ```
 
-```bash
-docker run -it ahadtar1/flaskapp
-```
-
 ### Case 2 - Build Docker Image and Run Project
 
 The docker file is provided in the project which builds an image. The project will be up and running once the commands for building the image and container are entered.
 
 ```bash
-docker build -t flaskapp:latest . 
+docker build -t ahadtar1/flaskapp:latest . 
 ```
 
 ```bash
-docker run -it flaskapp
+docker run -it ahadtar1flaskapp
 ```
 
 ### Case 3 - Run Project without Docker

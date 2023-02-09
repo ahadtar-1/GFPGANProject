@@ -35,8 +35,8 @@ def upsampling_image(filePath: str)-> str:
     modelPath = load_file_from_url(url = fileUrl[0], model_dir = modelDir, progress = True, file_name = None)
     upSampler = RealESRGANer(scale = 4, model_path = modelPath, dni_weight = 1, model = model)
     outputImage = upSampler.enhance(newImage, 4)
-    fileName = 'upsampledimg.jpg'
-    cv2.imwrite('upsampledimg.jpg', outputImage[0])
+    fileName = 'upsampledimgtwo.jpg'
+    cv2.imwrite('upsampledimgtwo.jpg', outputImage[0])
     path = os.path.join("", fileName)
     return path
 

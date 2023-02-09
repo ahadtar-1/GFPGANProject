@@ -6,7 +6,7 @@ from flask import Flask, request, send_file, render_template
 import os
 from operations import upsampling_image, face_enhancement
 
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__, template_folder = 'templates')
 
 
 @app.route("/")
@@ -24,7 +24,7 @@ def selection_menu()-> None:
 
     """
 
-    return render_template("page.html")
+    return render_template('page.html')
 
 
 @app.route('/upsampleimg', methods = ['GET', 'POST'])

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APIs</title>
+    </head>
+    <body>  
+    <h1>APIs</h1>
+    <h3>Select an image to be upsampled</h3>
+        <form method = "post" action = "/upsampleimg" enctype="multipart/form-data">
+            <input type="file" id="file" name="file">
+        <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3>Select an image to be enhanced</h3>
+
+        <form method = "post" action = "/enhanceimg" enctype="multipart/form-data">
+            <input type="file" id="myfile" name="file">
+        <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
